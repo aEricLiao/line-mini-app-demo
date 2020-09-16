@@ -1,0 +1,1 @@
+export const LIFF_ID = "1654890601-XA14P1B4";
