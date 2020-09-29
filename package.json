@@ -1,0 +1,19 @@
+{
+  "name": "drink-demo",
+  "version": "1.0.0",
+  "description": "drink demo test",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "https-localhost": "^4.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server",
+    "build": "cd ui/ && npm install && npm run build",
+    "dev": "ENVIRONMENT=local_production node server"
+  },
+  "author": "",
+  "license": "ISC"
+}

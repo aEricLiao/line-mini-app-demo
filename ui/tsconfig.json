@@ -12,7 +12,8 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "types": [
-      "jest"
+      "jest",
+      "node"
     ],
     "strict": true,
     "forceConsistentCasingInFileNames": true,

@@ -1,10 +1,17 @@
 import React from "react";
 import liff from "@line/liff";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+const isDev =
+  process.env.NODE_ENV === "development" ||
+  process.env.REACT_APP_ENVIRONMENT === "local";
+
 export default function LoginPage() {
   const handleLogin = () => {
     if (!liff.isLoggedIn()) {
-      liff.login();
+      return isDev
+        ? liff.login({ redirectUri: process.env.REACT_APP_REDIRECT_URL })
+        : liff.login();
     }
   };
 
